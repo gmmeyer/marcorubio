@@ -5,7 +5,7 @@
 
     <meta name="description" content="Are you Muckin for Marco? We are.">
 
-    <meta property="fb:app_id" content="">
+    <meta property="fb:app_id" content="1620717728147637">
 
     <meta name="referrer" content="always">
 
@@ -69,10 +69,30 @@
     })(window,document,'script','dataLayer','GTM-WHK633');</script>
     <!-- End Google Tag Manager -->
 
-      <div class='text-holder container jumbotron'>
-        <h1 class="gay-rights clearfix">Support Gay Rights</h1>
-        <h1 class="gay-rights clearfix">Vote Democratic</h1>
-      </div>
+    <!-- Facebook SDK -->
+    <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         appId      : '1620717728147637',
+         xfbml      : true,
+         version    : 'v2.3'
+       });
+     };
+
+     (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- End Facebook SDK -->
+
+    <div class='text-holder container jumbotron'>
+      <h1 class="gay-rights clearfix">Support Gay Rights</h1>
+      <h1 class="gay-rights clearfix">Vote Democratic</h1>
+    </div>
 
   </body>
 </html>
